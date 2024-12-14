@@ -1,0 +1,11 @@
+[user]
+	name = TB
+
+[alias]
+    logtree = log --all --graph --decorate --oneline
+
+[init]
+	defaultBranch = master
+
+[color]
+	ui = auto

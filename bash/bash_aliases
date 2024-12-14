@@ -1,0 +1,18 @@
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias ls='ls --color=auto'
+alias ll='ls -lAh'
+alias la='ls -A'
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias ..='cd ..'
+alias rmd='rm -rf'
+
+alias update='sudo apt update && sudo apt upgrade' # Update and upgrade system
+alias install='sudo apt install'                  # Install packages
+alias remove='sudo apt remove'                    # Remove packages
+
+mcd() {
+    mkdir "${1}" && cd "${1}"
+}

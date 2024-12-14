@@ -1,0 +1,35 @@
+set nocompatible
+syntax on
+set modelines=0
+set number
+set encoding=utf-8
+set wrap
+set noexpandtab
+set autoindent
+set hlsearch
+set incsearch
+set showmatch
+set smartcase
+set hidden
+set ttyfast
+set showcmd
+set background=dark
+
+" highlight current line, but only in active window
+augroup CursorLineOnlyInActiveWindow
+    autocmd!
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    autocmd WinLeave * setlocal nocursorline
+augroup END
+
+" CTRL + D to copy a line
+nnoremap <C-d> :t.<CR>
+inoremap <C-d> <Esc>:t.<CR>i
+
+" CTRL + Y to delete a line
+nnoremap <C-y> :delete<CR>
+inoremap <C-y> <Esc>:delete<CR>i
+
+" CTRL + ARROWS UP/DOWN to move a line around
+nnoremap <C-Up> :m .-2<CR>==
+nnoremap <C-Down> :m .+1<CR>==

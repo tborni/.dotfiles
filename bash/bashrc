@@ -1,0 +1,3 @@
+source ~/.dotfiles/bash/bash_settings
+source ~/.dotfiles/bash/bash_aliases
+source ~/.dotfiles/bash/bash_prompt
